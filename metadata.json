@@ -1,0 +1,7 @@
+{
+  "name": "QuizMaster AI",
+  "description": "A professional, AI-powered English quiz editor featuring a clean UI, question generation, and real-time preview.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
