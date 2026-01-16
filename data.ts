@@ -165,7 +165,7 @@ export const QUIZ_SETS: QuizSet[] = [
   {
     id: 'part1-vocabulary',
     title: 'Part 1: Vocabulary & Grammar',
-    description: '160 Questions divided into 4 parts. Choose a specific part or practice randomly.',
+    description: '200 Questions divided into 4 parts. Choose a specific part or practice randomly.',
     difficulty: 'Medium',
     estimatedTime: 15,
     // Note: The questions here are just placeholders or the full set, 

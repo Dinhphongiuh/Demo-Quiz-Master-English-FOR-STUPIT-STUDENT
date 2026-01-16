@@ -166,7 +166,7 @@ const QuizDashboard: React.FC<QuizDashboardProps> = ({
 
             <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-100">
               <span className="text-sm font-medium text-slate-600">
-                {set.id === 'part1-vocabulary' ? '160 Questions (4 Parts)' : `${set.questions.length} Questions`}
+                {set.id === 'part1-vocabulary' ? '200 Questions (4 Parts)' : `${set.questions.length} Questions`}
               </span>
               <button className="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                 <Play size={20} className="ml-1" />

@@ -11,7 +11,7 @@ const createOptions = (correctIndex: number, texts: string[]) => {
 
 const qType = QuestionType.SINGLE_CHOICE;
 
-// Full list of 160+ Vocabulary Questions
+// Full list of 200 Vocabulary Questions
 const all_vocab_questions: Question[] = [
   // Page 1
   { id: 'q1', type: qType, points: 1, timeLimit: 30, required: true, text: 'Tim ______ the news, while his son was playing computer games.', options: createOptions(2, ['is watching', 'watches', 'was watching', 'watching']), explanation: 'Past Continuous for interrupted action.' },
@@ -143,9 +143,9 @@ const all_vocab_questions: Question[] = [
   { id: 'q121', type: qType, points: 1, timeLimit: 30, required: true, text: 'The plans for the new hospital ______ soon.', options: createOptions(1, ['will make', 'will be made', 'will be making', 'are made']), explanation: 'Will be made (passive).' },
   { id: 'q122', type: qType, points: 1, timeLimit: 30, required: true, text: 'All the bills ______ by my father.', options: createOptions(3, ['have paid', 'be paid', 'been paid', 'have been paid']), explanation: 'Have been paid.' },
   { id: 'q123', type: qType, points: 1, timeLimit: 30, required: true, text: 'The Spanish language ______ in many countries.', options: createOptions(0, ['is spoken', 'speaks', 'are spoken', 'spoken']), explanation: 'Is spoken.' },
-  { id: 'q124', type: qType, points: 1, timeLimit: 30, required: true, text: 'I didn\'t turn on the light ______ I didn\'t want to wake the baby up.', options: createOptions(3, ['because of', 'as', 'despite', 'so as not to']), explanation: 'Wait, "I didn\'t want to". Option B "as" fits: "as I didn\'t want". Option D "so as not to" requires infinitive "so as not to wake". The sentence says "___ I didn\'t want". Correct is "as" or "because". Option B is "as".' },
+  { id: 'q124', type: qType, points: 1, timeLimit: 30, required: true, text: 'I didn\'t turn on the light ______ I didn\'t want to wake the baby up.', options: createOptions(3, ['because of', 'as', 'despite', 'so as not to']), explanation: 'As (because).' },
   { id: 'q125', type: qType, points: 1, timeLimit: 30, required: true, text: 'Our flight wasn\'t cancelled ______ the heavy storm.', options: createOptions(2, ['although', 'in spite', 'despite', 'even though']), explanation: 'Despite.' },
-  { id: 'q126', type: qType, points: 1, timeLimit: 30, required: true, text: 'They took a taxi ______ catch their flight.', options: createOptions(1, ['so as', 'so that', 'as to', 'in order to']), explanation: 'So that they could? Wait. Options: A. so as B. so that C. as to D. in order to. "They took a taxi [in order to] catch". "so that" needs clause "so that they could". "so as" needs "to". "in order to" works.' },
+  { id: 'q126', type: qType, points: 1, timeLimit: 30, required: true, text: 'They took a taxi ______ catch their flight.', options: createOptions(1, ['so as', 'so that', 'as to', 'in order to']), explanation: 'In order to.' },
   { id: 'q127', type: qType, points: 1, timeLimit: 30, required: true, text: 'Is tomorrow\'s newspaper ______ right now?', options: createOptions(2, ['been printed', 'be printing', 'being printed', 'been printing']), explanation: 'Being printed.' },
   // Page 8
   { id: 'q128', type: qType, points: 1, timeLimit: 30, required: true, text: 'George ______ at 5 o\'clock yesterday.', options: createOptions(3, ['has been interviewed', 'was interviewing', 'interviewed', 'was being interviewed']), explanation: 'Was being interviewed.' },
@@ -174,20 +174,63 @@ const all_vocab_questions: Question[] = [
   { id: 'q150', type: qType, points: 1, timeLimit: 30, required: true, text: 'The police officer asked me ______.', options: createOptions(2, ['where are you from', 'whether you are from', 'where I was from', 'where was I from']), explanation: 'Where I was from.' },
   { id: 'q151', type: qType, points: 1, timeLimit: 30, required: true, text: 'Both my brother and I are still ______ our old friends from Dover.', options: createOptions(1, ['in place of', 'in touch with', 'in answer to', 'in addition to']), explanation: 'In touch with.' },
   { id: 'q152', type: qType, points: 1, timeLimit: 30, required: true, text: 'Could you tell me who is ______ of the marketing department?', options: createOptions(0, ['in charge', 'in answer', 'in agreement', 'in comparison']), explanation: 'In charge.' },
-  { id: 'q153', type: qType, points: 1, timeLimit: 30, required: true, text: 'In ______ painting the whole house, he built a new garage.', options: createOptions(3, ['place of', 'front of', 'addition to', 'addition to']), explanation: 'In addition to (painting). Wait, options text might be wrong. A "charge of", B "front of", C "addition to", D "touch with" (from image 153 is actually image 9, Q153). Options are: A. charge of B. front of C. addition to D. touch with. Ah, Q153 prompt says "In ___ painting". Option C is "addition to".' },
+  { id: 'q153', type: qType, points: 1, timeLimit: 30, required: true, text: 'In ______ painting the whole house, he built a new garage.', options: createOptions(3, ['place of', 'front of', 'addition to', 'addition to']), explanation: 'In addition to.' },
   { id: 'q154', type: qType, points: 1, timeLimit: 30, required: true, text: 'The children were telling stories ______ the fireplace.', options: createOptions(3, ['in place of', 'in touch with', 'in addition to', 'in front of']), explanation: 'In front of.' },
   { id: 'q155', type: qType, points: 1, timeLimit: 30, required: true, text: 'The teacher asked me when World War II ______.', options: createOptions(0, ['broke out', 'broke in', 'broke into', 'broke down']), explanation: 'Broke out.' },
   { id: 'q156', type: qType, points: 1, timeLimit: 30, required: true, text: 'Joe was late because his car had ______.', options: createOptions(2, ['broken out', 'broken in', 'broken down', 'broken through']), explanation: 'Broken down.' },
   { id: 'q157', type: qType, points: 1, timeLimit: 30, required: true, text: 'Somebody ______ my best friend\'s house a week ago.', options: createOptions(1, ['broke out', 'broke into', 'broke through', 'broke down']), explanation: 'Broke into.' },
   { id: 'q158', type: qType, points: 1, timeLimit: 30, required: true, text: 'I\'m sorry for ______ on your conversation but we have to leave soon,', options: createOptions(0, ['breaking in', 'breaking down', 'breaking through', 'breaking out']), explanation: 'Breaking in.' },
   { id: 'q159', type: qType, points: 1, timeLimit: 30, required: true, text: 'He was caught ______ stealing money from my purse.', options: createOptions(3, ['off guard', 'sight of', 'a cold', 'red-handed']), explanation: 'Red-handed.' },
-  { id: 'q160', type: qType, points: 1, timeLimit: 30, required: true, text: 'Don\'t walk in the rain without your anorak or you\'ll ______.', options: createOptions(0, ['catch a cold', 'catch sight of it', 'catch your eye', 'catch it off guard']), explanation: 'Catch a cold.' }
+  { id: 'q160', type: qType, points: 1, timeLimit: 30, required: true, text: 'Don\'t walk in the rain without your anorak or you\'ll ______.', options: createOptions(0, ['catch a cold', 'catch sight of it', 'catch your eye', 'catch it off guard']), explanation: 'Catch a cold.' },
+  // Page 10
+  { id: 'q161', type: qType, points: 1, timeLimit: 30, required: true, text: 'The children are ______ seeing their cousins from Mexico.', options: createOptions(0, ['looking forward to', 'looking for', 'looking out', 'looking over']), explanation: 'Looking forward to.' },
+  { id: 'q162', type: qType, points: 1, timeLimit: 30, required: true, text: 'Peter\'s job interview ______ to be a total disaster.', options: createOptions(2, ['turned up', 'turned off', 'turned out', 'turned down']), explanation: 'Turned out.' },
+  { id: 'q163', type: qType, points: 1, timeLimit: 30, required: true, text: 'I really wish you wouldn\'t comment ______ everything I do.', options: createOptions(3, ['with', 'at', 'for', 'on']), explanation: 'Comment on.' },
+  { id: 'q164', type: qType, points: 1, timeLimit: 30, required: true, text: 'The new project is under Mr. Benson\'s ______.', options: createOptions(0, ['supervision', 'construction', 'consideration', 'repair']), explanation: 'Under supervision.' },
+  { id: 'q165', type: qType, points: 1, timeLimit: 30, required: true, text: 'Could you please inform me ______ the changes which have occurred in the new program?', options: createOptions(3, ['on', 'with', 'for', 'about']), explanation: 'Inform about.' },
+  { id: 'q166', type: qType, points: 1, timeLimit: 30, required: true, text: 'My father was raised in great ______ so he doesn\'t like to waste money on silly things.', options: createOptions(1, ['luxury', 'poverty', 'consideration', 'supervision']), explanation: 'Raised in poverty.' },
+  { id: 'q167', type: qType, points: 1, timeLimit: 30, required: true, text: 'We were asked to pay ______.', options: createOptions(2, ['with regard to', 'at convenience', 'in advance', 'into consideration']), explanation: 'In advance.' },
+  { id: 'q168', type: qType, points: 1, timeLimit: 30, required: true, text: 'We\'ll discuss the ______ in detail for the match so we will go.', options: createOptions(0, ['detail', 'conclusion', 'meantime', 'fact']), explanation: 'Discuss the matter/detail.' },
+  { id: 'q169', type: qType, points: 1, timeLimit: 30, required: true, text: 'We finally found tickets for the match so we will go ______.', options: createOptions(3, ['at all', 'all over', 'all in all', 'after all']), explanation: 'After all.' },
+  { id: 'q170', type: qType, points: 1, timeLimit: 30, required: true, text: 'We can arrange an appointment ______.', options: createOptions(3, ['with regard to', 'into consideration', 'at all', 'at your convenience']), explanation: 'At your convenience.' },
+  { id: 'q171', type: qType, points: 1, timeLimit: 30, required: true, text: 'My sister helped me give ______ the invitations.', options: createOptions(1, ['up', 'out', 'off', 'away']), explanation: 'Give out.' },
+  { id: 'q172', type: qType, points: 1, timeLimit: 30, required: true, text: 'Take ______. There\'s no need to shout.', options: createOptions(2, ['no notice', 'part in', 'it easy', 'your time']), explanation: 'Take it easy.' },
+  { id: 'q173', type: qType, points: 1, timeLimit: 30, required: true, text: 'The doctor would like to look ______ your results one more time.', options: createOptions(3, ['out', 'up', 'after', 'over']), explanation: 'Look over.' },
+  { id: 'q174', type: qType, points: 1, timeLimit: 30, required: true, text: 'You ______ see a doctor about that cough.', options: createOptions(0, ['had better', 'would better', 'could better', 'should better']), explanation: 'Had better.' },
+  { id: 'q175', type: qType, points: 1, timeLimit: 30, required: true, text: 'What ______ between 5 and 6 o\'clock last night?', options: createOptions(1, ['had you done', 'were you doing', 'have you done', 'had you been doing']), explanation: 'Were you doing.' },
+  { id: 'q176', type: qType, points: 1, timeLimit: 30, required: true, text: 'We have an upset stomach this morning. The fish we ate last night ______ have been fresh.', options: createOptions(3, ['shouldn\'t', 'wouldn\'t', 'needn\'t', 'couldn\'t']), explanation: 'Couldn\'t have been.' },
+  { id: 'q177', type: qType, points: 1, timeLimit: 30, required: true, text: 'You should ______ your hair cut. It has grown really long.', options: createOptions(2, ['had', 'having', 'have', 'to have']), explanation: 'Should have (causative).' },
+  { id: 'q178', type: qType, points: 1, timeLimit: 30, required: true, text: 'My father said that he ______ about buying me a scooter.', options: createOptions(0, ['would think', 'will think', 'is thinking', 'has thought']), explanation: 'Would think.' },
+  // Page 11
+  { id: 'q179', type: qType, points: 1, timeLimit: 30, required: true, text: '"Can I have some more cake?" "Help yourself. You ______ ask."', options: createOptions(1, ['can\'t', 'needn\'t', 'couldn\'t', 'wouldn\'t']), explanation: 'Needn\'t.' },
+  { id: 'q180', type: qType, points: 1, timeLimit: 30, required: true, text: 'Mandy ______ them not to touch the wire.', options: createOptions(2, ['suggested', 'apologized', 'warned', 'denied']), explanation: 'Warned.' },
+  { id: 'q181', type: qType, points: 1, timeLimit: 30, required: true, text: 'The electrician ______ a new camera at the bank right now.', options: createOptions(2, ['installs', 'was installing', 'is installing', 'had installed']), explanation: 'Is installing.' },
+  { id: 'q182', type: qType, points: 1, timeLimit: 30, required: true, text: 'I ______ to sort out this situation once and for all.', options: createOptions(1, ['will', 'am going', 'shall', 'will be going']), explanation: 'Am going.' },
+  { id: 'q183', type: qType, points: 1, timeLimit: 30, required: true, text: 'As Liam ______ down the street, a flower pot fell on his head.', options: createOptions(1, ['walks', 'was walking', 'is walking', 'walking']), explanation: 'Was walking.' },
+  { id: 'q184', type: qType, points: 1, timeLimit: 30, required: true, text: 'This time next week we ______ our final exam.', options: createOptions(2, ['are talking', 'take', 'will be taking', 'will have taken']), explanation: 'Will be taking.' },
+  { id: 'q185', type: qType, points: 1, timeLimit: 30, required: true, text: 'You can have ______ the cheese cake or the coconut tart.', options: createOptions(0, ['either', 'neither', 'both', 'none']), explanation: 'Either.' },
+  { id: 'q186', type: qType, points: 1, timeLimit: 30, required: true, text: 'It\'s difficult for me ______ right now. I need more time to think about it.', options: createOptions(3, ['decide', 'deciding', 'to be decided', 'to decide']), explanation: 'To decide.' },
+  { id: 'q187', type: qType, points: 1, timeLimit: 30, required: true, text: 'Oliver speaks Japanese really ______.', options: createOptions(0, ['well', 'good', 'better', 'best']), explanation: 'Well.' },
+  { id: 'q188', type: qType, points: 1, timeLimit: 30, required: true, text: 'He warned me ______ on that chair because it was broken.', options: createOptions(3, ['not sitting', 'never sitting', 'don\'t sit', 'not to sit']), explanation: 'Not to sit.' },
+  { id: 'q189', type: qType, points: 1, timeLimit: 30, required: true, text: 'There\'s ______ carrot cake left but not enough for all of your friends.', options: createOptions(3, ['few', 'little', 'a few', 'a little']), explanation: 'A little (meaning some).' },
+  { id: 'q190', type: qType, points: 1, timeLimit: 30, required: true, text: 'Did you know that ______ reptiles are cold-blooded?', options: createOptions(0, ['all', 'either', 'neither', 'none']), explanation: 'All.' },
+  { id: 'q191', type: qType, points: 1, timeLimit: 30, required: true, text: '______ the train was late, he got to work on time.', options: createOptions(1, ['Despite', 'Although', 'In spite', 'In spite of']), explanation: 'Although.' },
+  { id: 'q192', type: qType, points: 1, timeLimit: 30, required: true, text: 'Dad was right! I really wish I ______ his advice!', options: createOptions(2, ['take', 'took', 'had taken', 'have taken']), explanation: 'Had taken.' },
+  { id: 'q193', type: qType, points: 1, timeLimit: 30, required: true, text: 'I couldn\'t fall asleep last night, so I tried ______ a book, but that didn\'t help either.', options: createOptions(1, ['to read', 'reading', 'read', 'to have read']), explanation: 'Reading.' },
+  { id: 'q194', type: qType, points: 1, timeLimit: 30, required: true, text: 'If I ______ you, I\'d call him right now.', options: createOptions(3, ['am', 'have been', 'will be', 'were']), explanation: 'Were.' },
+  { id: 'q195', type: qType, points: 1, timeLimit: 30, required: true, text: 'This exercise isn\'t as easy ______ it may seem.', options: createOptions(0, ['as', 'so', 'than', 'from']), explanation: 'As.' },
+  { id: 'q196', type: qType, points: 1, timeLimit: 30, required: true, text: 'Last Saturday they visited the village ______ their father was born.', options: createOptions(1, ['which', 'where', 'whose', 'when']), explanation: 'Where.' },
+  { id: 'q197', type: qType, points: 1, timeLimit: 30, required: true, text: 'Give me a call when you ______ to the office.', options: createOptions(0, ['go', 'will go', 'are going', 'went']), explanation: 'Go.' },
+  // Page 12
+  { id: 'q198', type: qType, points: 1, timeLimit: 30, required: true, text: 'I\'m a bit tired so I\'d rather ______ in tonight.', options: createOptions(3, ['staying', 'am staying', 'to stay', 'stay']), explanation: 'Stay.' },
+  { id: 'q199', type: qType, points: 1, timeLimit: 30, required: true, text: 'Unless you start taking your medication, you ______ feel better.', options: createOptions(1, ['will', 'won\'t', 'would', 'wouldn\'t']), explanation: 'Won\'t.' },
+  { id: 'q200', type: qType, points: 1, timeLimit: 30, required: true, text: 'When I arrived at the airport, I realized that I ______ my ticket.', options: createOptions(2, ['have forgotten', 'forget', 'had forgotten', 'was forgetting']), explanation: 'Had forgotten.' }
 ];
 
 export const vocab_parts = {
-  part1: all_vocab_questions.slice(0, 40),
-  part2: all_vocab_questions.slice(40, 80),
-  part3: all_vocab_questions.slice(80, 120),
-  part4: all_vocab_questions.slice(120, 160),
+  part1: all_vocab_questions.slice(0, 50),
+  part2: all_vocab_questions.slice(50, 100),
+  part3: all_vocab_questions.slice(100, 150),
+  part4: all_vocab_questions.slice(150, 200),
   full: all_vocab_questions
 };

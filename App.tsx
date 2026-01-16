@@ -36,9 +36,9 @@ const App: React.FC = () => {
     let titleSuffix = '';
 
     if (part === 'random') {
-      // Pick 40 random questions from the full list
+      // Pick 50 random questions from the full list
       const shuffled = [...vocab_parts.full].sort(() => 0.5 - Math.random());
-      questions = shuffled.slice(0, 40);
+      questions = shuffled.slice(0, 50);
       titleSuffix = 'Random Selection';
     } else {
       questions = vocab_parts[part];
@@ -49,9 +49,9 @@ const App: React.FC = () => {
     const vocabSet: QuizSet = {
       id: `vocab-${part}`,
       title: `Vocabulary & Grammar: ${titleSuffix}`,
-      description: 'Focus on 40 specific vocabulary questions.',
+      description: 'Focus on 50 specific vocabulary questions.',
       difficulty: 'Medium',
-      estimatedTime: 15,
+      estimatedTime: 20,
       questions: questions
     };
 

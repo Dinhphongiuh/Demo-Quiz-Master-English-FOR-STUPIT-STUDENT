@@ -29,7 +29,7 @@ const PartSelectionModal: React.FC<PartSelectionModalProps> = ({ onSelect, onClo
               className="flex flex-col items-center justify-center p-4 bg-indigo-50 border border-indigo-100 rounded-xl hover:bg-indigo-100 hover:border-indigo-200 transition-all group"
             >
               <span className="bg-white w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 font-bold mb-2 shadow-sm group-hover:scale-110 transition-transform">1</span>
-              <span className="font-semibold text-indigo-900">Questions 1-40</span>
+              <span className="font-semibold text-indigo-900">Questions 1-50</span>
             </button>
             
             <button 
@@ -37,7 +37,7 @@ const PartSelectionModal: React.FC<PartSelectionModalProps> = ({ onSelect, onClo
               className="flex flex-col items-center justify-center p-4 bg-indigo-50 border border-indigo-100 rounded-xl hover:bg-indigo-100 hover:border-indigo-200 transition-all group"
             >
               <span className="bg-white w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 font-bold mb-2 shadow-sm group-hover:scale-110 transition-transform">2</span>
-              <span className="font-semibold text-indigo-900">Questions 41-80</span>
+              <span className="font-semibold text-indigo-900">Questions 51-100</span>
             </button>
             
             <button 
@@ -45,7 +45,7 @@ const PartSelectionModal: React.FC<PartSelectionModalProps> = ({ onSelect, onClo
               className="flex flex-col items-center justify-center p-4 bg-indigo-50 border border-indigo-100 rounded-xl hover:bg-indigo-100 hover:border-indigo-200 transition-all group"
             >
               <span className="bg-white w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 font-bold mb-2 shadow-sm group-hover:scale-110 transition-transform">3</span>
-              <span className="font-semibold text-indigo-900">Questions 81-120</span>
+              <span className="font-semibold text-indigo-900">Questions 101-150</span>
             </button>
             
             <button 
@@ -53,7 +53,7 @@ const PartSelectionModal: React.FC<PartSelectionModalProps> = ({ onSelect, onClo
               className="flex flex-col items-center justify-center p-4 bg-indigo-50 border border-indigo-100 rounded-xl hover:bg-indigo-100 hover:border-indigo-200 transition-all group"
             >
               <span className="bg-white w-10 h-10 rounded-full flex items-center justify-center text-indigo-600 font-bold mb-2 shadow-sm group-hover:scale-110 transition-transform">4</span>
-              <span className="font-semibold text-indigo-900">Questions 121-160</span>
+              <span className="font-semibold text-indigo-900">Questions 151-200</span>
             </button>
           </div>
           
@@ -62,7 +62,7 @@ const PartSelectionModal: React.FC<PartSelectionModalProps> = ({ onSelect, onClo
             className="w-full py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-xl shadow-lg shadow-indigo-200 hover:shadow-xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-3"
           >
             <Shuffle size={20} />
-            Random Selection (40 Questions)
+            Random Selection (50 Questions)
           </button>
         </div>
       </div>
